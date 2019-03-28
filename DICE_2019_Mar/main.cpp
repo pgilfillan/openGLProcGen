@@ -14,6 +14,7 @@
 #include "Util.h"
 #include "Camera.h"
 #include "ResourceManager.h"
+#include "Terrain.h"
 
 GLFWwindow *window;
 
@@ -47,6 +48,9 @@ int main() {
 	glm::mat4 View = cam.getView();
 	glm::mat4 Model = glm::mat4(1.0f);
 	glm::mat4 MVP = Projection * View * Model;
+
+	Terrain terrain(32, 32, 1);
+	terrain.printPoints();
 
 	ResourceManager resManager;
 	//Load textures
