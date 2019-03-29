@@ -56,5 +56,11 @@
     <ClInclude Include="Terrain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Perlin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
